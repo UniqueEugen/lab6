@@ -1,0 +1,267 @@
+<!DOCKTYPE html>
+<html>
+
+<head>
+    <meta charet='utf-8'>
+    <link rel="stylesheet" href="../../CommonStyle/Lab4forms.css" />
+    <link rel="stylesheet" href="../css/Lab4forms.css" />
+    <link rel="stylesheet" href="../css/HeaderForm.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Sony</title>
+
+</head>
+
+<body text="wheat">
+
+    <header class="head"></header>
+    <main>
+        <nav class="navigation" id="block">
+            <button style="width:70%" class="avtorize btn" id="sams">Samsung</button>
+            <button style="width:70%" class="avtorize btn" id="apple">Apple</button>
+            <button style="width:70%" class="avtorize btn" id="nok">Nokia</button>
+        </nav>
+        <section class="loginForm">
+
+            <div id="id01" class="modal">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                </div>
+                <div class="modal-content animate">
+                    <div style="font-size:20px; color:forestgreen; margin: 5px;">Отзывы клиентов</div>
+
+                    <table id="MT" NOSHADE cellspacing="0" class="goodTable">
+                        <template id="tal">
+                            <tr>
+                                <td class="good">ID</td>
+                                <td class="good">Марка</td>
+                                <td class="good">Серия</td>
+                                <td class="good">Адрес производства</td>
+                                <td class="good">Назначение</td>
+                                <td class="good">Дата выпуска</td>
+                            </tr>
+                        </template>
+                    </table>
+                </div>
+                <button type="button" onclick="document.getElementById('id01').style.display = 'none'" class="cancelbtn">Cancel</button>
+            </div>
+        </section>
+        <p id="id">Запросы:<br></p>
+        <article class="toForm" id="blockMain">
+
+            <div style="color: black; font-size:25px; text-shadow: 3px 3px 5px white;">Оставте информацию о своей технике. Вы очень помогаете нам развиваться в удобном для Вас направлении!</div>
+            <form class="form1" id="form1" action="" method="post" oninput="outbuy.value=biy.value" enctype="multipart/form-data">
+                <div style="background-color:aliceblue; width:15%; border: 2px dashed black; margin:auto">
+                    <label style="color: black; text-shadow: 3px 3px 5px white; padding:0px; margin:0px;" for="imgsub">Отправить*</label>
+                    <input type="image" src="../resourses/but.jpg" id="imgsub" alt="toMagaz" style="width:90%; border: none; padding-bottom:0px;">
+                </div>
+                <fieldset>
+                    <legend>Информация об автомобиле</legend>
+                    <div class="f1">
+                        <div class="field">
+                            <label id="bl" for="surname">Марка: </label>
+                            <input required type="text" id="mark" name="mark" autofocus placeholder="Rheinmetall-Borsig"><br>
+                        </div>
+                        <div class="field">
+                            <label for="name">Серия:</label>
+                            <input required type="text" id="ser" name="ser" placeholder="PZ-4 ausf. H"><br>
+                        </div>
+                        <div class="field">
+                            <label for="name">Назначение:</label>
+
+                            <select name="naz" size="1" required>
+                                <optgroup label="Ведение боевых действий">
+                                    <option value="Танк" selected>Танк</option>
+                                    <option value="Разведка">Разведка</option>
+                                    <option value="ПВО">ПВО</option>
+                                    <option value="Бронетранспортер">Бронетранспортер</option>
+                                    <option value="Тягач">Тягач</option>
+                                </optgroup>
+                                <optgroup label="Строительные и земляные работы">
+                                    <option value="Автокран">Автокран</option>
+                                    <option value="Каток">Каток</option>
+                                    <option value="Бетономешалка">Бетономешалка</option>
+                                    <option value="Бульдозер">Бульдозер</option>
+                                    <option value="Асфальтоукладчик">Асфальтоукладчик</option>
+                                </optgroup>
+                                <optgroup label="Легковой автомобиль">
+                                    <option value="Гоночный">Гоночный</option>
+                                    <option value="Семейный">Семейный</option>
+                                    <option value="Понты перед братками">Понты перед братками</option>
+                                    <option value="Стандарт">Стандарт</option>
+                                    <option value="Дед помнит">Дед помнит</option>
+                                </optgroup>
+                            </select><br>
+                        </div>
+                        <br>
+
+                        <div class="field">
+                            <label for="birth">Дата выпуска: </label>
+                            <input name="birthday" type="datetime-local" id="birth" required><br>
+                        </div><br>
+                        <div class="field">
+                            <label for="name">Адрес производителя:</label>
+                            <input required type="text" id="addr" name="addr" placeholder="Берлин"><br>
+                        </div>
+                        <br>
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Кнопочки</legend>
+                    <input type="submit" value="Отправить">
+                    <input type="reset" value="Сбросить">
+
+
+            </form>
+            <form id="idForm">
+                <label for="sel" id="nsddsz">ID das auto:</label>
+                <select name="id" id="sel" style="clear:both">
+                </select><br>
+                <button style="clear:both" id="del">Удалить "das auto"</button>
+                <button id="showM" onclick="document.getElementById('id05').style.display = 'block'">Добавить параметр "das auto"</button><br>
+                <label for="name" id="nsdz">Назначение:</label>
+
+                <select id="nz" name="naz" size="1" required>
+                    <optgroup label="Ведение боевых действий">
+                        <option value="Танк" selected>Танк</option>
+                        <option value="Разведка">Разведка</option>
+                        <option value="ПВО">ПВО</option>
+                        <option value="Бронетранспортер">Бронетранспортер</option>
+                        <option value="Тягач">Тягач</option>
+                    </optgroup>
+                    <optgroup label="Строительные и земляные работы">
+                        <option value="Автокран">Автокран</option>
+                        <option value="Каток">Каток</option>
+                        <option value="Бетономешалка">Бетономешалка</option>
+                        <option value="Бульдозер">Бульдозер</option>
+                        <option value="Асфальтоукладчик">Асфальтоукладчик</option>
+                    </optgroup>
+                    <optgroup label="Легковой автомобиль">
+                        <option value="Гоночный">Гоночный</option>
+                        <option value="Семейный">Семейный</option>
+                        <option value="Понты перед братками">Понты перед братками</option>
+                        <option value="Стандарт">Стандарт</option>
+                        <option value="Дед помнит">Дед помнит</option>
+                    </optgroup>
+                </select><br>
+                <button style="clear:both" id="show" onclick="document.getElementById('id04').style.display = 'block'">Показать производителей "das auto"</button>
+
+
+            </form>
+            <section class="loginForm">
+
+                <div id="id04" class="modal2">
+                    <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">×</span>
+                    <h1>По вышему запросу найдены следующие адреса:</h1>
+                    <div id="adreses"></div>
+                    <button type="button" onclick="document.getElementById('id04').style.display = 'none'" class="cancelbtn">Закрыть</button>
+                </div>
+            </section>
+
+            <section class="loginForm">
+
+                <div id="id05" class="modal2">
+                    <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">×</span>
+                    <form>
+                        <label>
+                            Введите параметр:
+                            <input id="par" required name="par" placeholder="Хаки" />
+                        </label><br>
+                        <label>
+                            Введите значение:
+                            <input id="valla" required name="vafl" placeholder="Хаки" />
+                        </label>
+                    </form>
+                    <button id="add" type="button" onclick="document.getElementById('id05').style.display = 'none'" class="cancelbtn">Выбор сделан!</button>
+                </div>
+            </section>
+            <section class="loginForm">
+
+                <div id="id02" class="modal2">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+                    <h1>Успешно отправлено!</h1>
+                    <button type="button" onclick="document.getElementById('id02').style.display = 'none'" class="cancelbtn">Cancel</button>
+                </div>
+            </section>
+            <script>
+                // Get the modal
+                var modal1 = document.getElementById('id01');
+                let madal2 = document.getElementById('id02');
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target == modal1) {
+                        modal1.style.display = "none";
+                    }
+                    if (event.target == madal2) { madal2.style.display = 'none'; }
+                }
+            </script>
+
+        </article>
+        <script>
+            let main = document.getElementById("blockMain");
+            height = main.offsetHeight;
+            console.log(height);
+        </script>
+        <aside class="reclama" id="block">
+            <a class="recl1" href="https://genshin.hoyoverse.com/ru/"><img src="../resourses/recl1.jpeg"></a>
+            <a class="recl" href="https://ru.wargaming.net/ru"><img src="../resourses/recl2.jpg"></a>
+        </aside>
+        <script>
+            let item = document.querySelectorAll("#block");
+            for (let i = 0; i < item.length; i++) {
+                item[i].style.height = height + 'px';
+                console.log(item[i].offsetHeight);
+            }
+        </script>
+    </main>
+    <script>
+        let mainForm = document.querySelector("main");
+        mainForm.style.height = height + "px";
+        console.log(mainForm.offsetHeight);
+        for (let i = 0; i < item.length; i++) {
+            item[i].style.height = 100 + '%';
+            console.log(item[i].offsetHeight);
+        }
+    </script>
+
+    <footer>
+        <section class="konez">
+            <a class="konez2" href="https://na.wotblitz.com/content/docs/system-requirements/">Системные требования World of Tanks Blitz</a>
+            <a class="konez2" href="https://worldoftanks.ru/ru/content/docs/download/">Системные требования World of Tanks</a>
+            <a class="konez2" href="https://na.wotblitz.com/ru/">Официальный сайт World of Tanks Blitz</a>
+            <a class="konez2" href="https://ru.wargaming.net/ru">Официальный сайт Wargaming.net</a>
+        </section>
+        <section class="konez3">
+            <div class="konez3">Сайт создан с помощью информации из </div><a class="konez3" href="http://htmlbook.ru/">HTMLBook</a>
+            <a class="konez3" href="steam://rungameid/444200">Играть в World of Tanks Blitz</a>
+            <a class="konez3" href="file:///D:/Games/WoT/World_of_Tanks_RU/wgc_api.exe">Играть в World of Tanks</a>
+        </section>
+
+        <article class="Polny_Konez">
+            2003-2023 Eugen&Co. Powered by <a class="konez4" href="https://ru.wargaming.net/ru">Wargaming.net</a> ©<br>Никакие права не защищены. Не воруйте пожалуйта мой сайт! гр.172301, ТРПО, САиПИС(сРРВП)
+        </article>
+    </footer>
+    <!--  <script>
+          if (window.localStorage) {
+              var elements = document.querySelectorAll('[name]');
+
+              for (var i = 0, length = elements.length; i < length; i++) {
+                  (function (element) {
+                      var name = element.getAttribute('name');
+
+                      element.value = localStorage.getItem(name) || element.value;
+
+                      element.onkeyup = function () {
+                          localStorage.setItem(name, element.value);
+                      };
+                  })(elements[i]);
+              }
+              for (let i = 0; i < elements.length; i++) { console.log(elements[i].name + " - " + elements[i].value) }
+          }
+
+      </script>-->
+    <script src="../scripts/Template.js"></script>
+    <script charset="utf-8" type="text/javascript" src="../scripts/TableInsert2.js"></script>
+</body>
+
+</html>

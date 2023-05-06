@@ -1,0 +1,264 @@
+@charset "windows-1251";
+body {
+    background-image: url(../resourses/tigF.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    /*margin-left: 20px;
+    margin-right: 20px;*/
+    min-width:1024px;
+    text-align:center;
+}
+a:visited{color:antiquewhite}
+@font-face {
+    font-family: "Mine";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../resourses/font2.otf) format("opentype");
+}
+.head{
+    height: 15%;
+    position:relative;
+    top:0px;
+    background-color:white;
+    background-image: url("../resourses/sony.jpg");
+    background-repeat:no-repeat;
+    background-size:auto  200%;
+    background-position: 50% 60%;
+
+}
+main {
+    position: relative;
+    display: flex;
+    min-height: calc(85% - 200px);
+    font-size:18px;
+    font-family:Mine;
+
+}
+.navigation{
+    position:relative;
+    float:left;
+    width: 10%;
+    background-color:brown;
+}
+.reclama {
+    position: relative;
+    width: 20%;
+    background-color: forestgreen;
+    margin-left: auto;
+    overflow: clip;
+    z-index:999;
+}
+.toForm {
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    width:70%;
+    background-image: url(../resourses/fon2.jpg);
+    background-size:  100%;
+    background-repeat: no-repeat;
+    background-color: burlywood;
+    padding: 20px;
+    z-index:10;
+}
+
+footer {
+    box-sizing: border-box;
+    position: relative;
+    height: 200px;
+    margin-bottom: 0px;
+    color: #696969;
+    background-color: #778899;
+    margin: 0px;
+    left: 0;
+    right: 0;
+}
+.konez {
+    white-space: pre;
+    white-space: pre;
+    text-align: left;
+    margin-left: 40px;
+    float: left;
+    width: 350px;
+    padding:5px;
+}
+.konez2 {
+    color: #C0C0C0;
+
+}
+    .konez2:visited {
+        color: #A9A9A9;
+    }
+.Polny_Konez
+{
+    margin-bottom:10px;
+    vertical-align:bottom;
+    clear:left;
+
+}
+
+.konez3 {
+    color: #C0C0C0;
+    white-space: pre;
+    text-align: left;
+    float: left;
+    padding: 15px;
+}
+.konez4 {
+    color: #696969;
+}
+.konez4:visited 
+{
+    color: #A9A9A9;
+}
+marquee {
+    color: #FF8C00;
+}
+q {
+    quotes: "\0022" "\0027";
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/*button {
+    position: fixed;
+    bottom: 30px;
+    height: 50px;
+    width: 200px;
+    border: black;
+    background-color: rgba(0,0,0,0);
+    z-index: 999;
+    margin-left: 30px;
+}*/
+
+.recl1 img{
+    width: 100%;
+    margin-top:-20px;
+}
+.recl img {
+    width:100%;
+}
+
+
+form fieldset{
+    background-color: rgba(0,0,0,0.5);
+    margin:auto;
+    width:70%;
+    border: 4px solid black;
+    text-align:left;
+    padding-left:1vw;
+}
+
+
+input, output, select {
+    width: 60%;
+    height: 24px;
+    margin-bottom: 10px;
+    padding: 2px 5px;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+    input[type="submit"], button {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        margin: 0 5px;
+        padding: 6px 15px;
+        color: #ffffff;
+        background-color: #2c3e50;
+        border: none;
+        border-radius: 5px;
+    }
+    input[type="reset"] {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        margin: 0 5px;
+        padding: 6px 15px;
+        color: #ffffff;
+        background-color: #2c3e50;
+        border: none;
+        border-radius: 5px;
+    }
+    input[type="radio"] {
+        width: auto;
+        height: auto;
+    }
+    input[type="checkbox"] {
+        width: auto;
+        height: auto;
+    }
+label{
+    font-size:18px;
+}
+.field {
+    clear: both;
+    text-align: right;
+}
+    .field label {
+        float: left;
+    }
+
+.f1{
+    float:left;
+    width:70%;
+}
+
+#biy{
+    width:20%;
+}
+
+output {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    margin: 0 5px 10px;
+    text-align: center;
+    background-color:white;
+    color:black;
+}
+
+legend{
+    color:white;
+    text-shadow: 2px 2px 5px black, 0px 0px 5px black;
+}
+
+.field1 {
+    clear: both;
+    text-align: right;
+}
+
+    .field1 label {
+        float: left;
+    }
+    .field1 input{
+        width:30%;
+    }
+.f2{
+    float:left;
+    width:75%;
+}
+.f3{
+    margin-top:10px;
+    width:100%;
+
+}
+
+header img{
+    height:100%;
+}
+
+#wait {
+    position: fixed;
+    display: none;
+    background-color: wheat;
+    width: 100vw;
+    height: 100vh;
+}
+
+#id {
+    width: 200px;
+    border: 2px solid black;
+}
